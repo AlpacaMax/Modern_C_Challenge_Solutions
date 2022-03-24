@@ -34,6 +34,8 @@ void mymergesort(double nums[], size_t start, size_t end) {
 	for (size_t result_i=0, nums_i=start; nums_i<=end; ++result_i, ++nums_i) {
 		nums[nums_i] = result[result_i];
 	}
+
+	free(result);
 }
 
 // Hoare partition scheme

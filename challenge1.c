@@ -56,12 +56,11 @@ size_t partition(double nums[], size_t start, size_t end) {
 }
 
 void myquicksort(double nums[], int start, int end) {
-	if (start >= end || start < 0) return;
-
-	int p;
-	p = partition(nums, start, end);
-	myquicksort(nums, start, p - 1);
-	myquicksort(nums, p + 1, end);
+	if (start >= 0 && end >= 0 && start < end) {
+		int p = partition(nums, start, end);
+		myquicksort(nums, start, p);
+		myquicksort(nums, p + 1, end);
+	}
 }
 
 void test(double nums[], size_t start, size_t end) {

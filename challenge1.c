@@ -1,4 +1,7 @@
 // Challenge 1 Sequential sorting algorithms
+//
+// Author: Tian(Maxwell) Yang
+//
 // Implement merger sort and quick sort with recursion
 // Write a simple test routine
 
